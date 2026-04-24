@@ -14,8 +14,8 @@ if b:
        mycol.insert_one(mydict)
        c1.success("Record Save")
 
-n1=c2.text_input("Enter name","n")
-a1=c2.text_input("Enter address","a")
+n1=c2.text_input("Enter name")
+a1=c2.text_input("Enter address")
 b1=c2.button("Login")
 if b1:
      res=mycol.findOne({"name":n1,"address":a1})
