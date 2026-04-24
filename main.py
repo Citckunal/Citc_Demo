@@ -14,11 +14,11 @@ if b:
        mycol.insert_one(mydict)
        c1.success("Record Save")
 
-n1=c2.text_input("Enter name")
-a1=c2.text_input("Enter address")
+n1=c2.text_input("Enter name",'u')
+a1=c2.text_input("Enter address",'a,)
 b1=c2.button("Login")
 if b1:
-     res=mycol.findOne({"name":n1,"address":a1})
+     res=mycol.find({"name":n1,"address":a1})
     
      for data in res:
              c2.success("Login successfully ")
