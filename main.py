@@ -19,6 +19,9 @@ a1=c2.text_input("Enter address",key='a')
 b1=c2.button("Login")
 if b1:
      res=mycol.find({"name":n1,"address":a1})
+     c2.success(n1)
+     c2.success(a1)
+
     
      for data in res:
              c2.success("Login successfully ")
