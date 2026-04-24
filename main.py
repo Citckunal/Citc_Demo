@@ -21,6 +21,6 @@ if b1:
      res=mycol.findOne({"name":n1,"address":a1})
     
      for data in res:
-            c2.success("Login successfully ")
+             c2.success("Login successfully ")
              c2.success(f"Welcome:{data['name']}")
             
